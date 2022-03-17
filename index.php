@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href = "css/main.css">
-    <link rel= " " href = "js/main.js">
 </head>
 <body>
-     
+<nav>
+        
+        </nav>
+        <div class="navbalk">
+    
+        </div>
+        <form id="formulier">
+            <P>log hier in: </P><br>
+            <input type="text" name="user" placeholder="username"><br>
+            <p>vul je wachtwoord in:</p><br>
+            <input type="password" name="password" placeholder="password"><br>
+            <input type="submit" name="submit" placeholder="submit"><br>
+        </form>
 
-<p>
-    <?php
-    $breedte = 10;
-    $lengte = 11;
-    $hoogte = 5;
-    $oppervlakte = ($breedte * $lengte);
-    echo "<p> de breedte is {$breedte}</p>";
-    echo "het oppervlakte is ",($oppervlakte), "m2";
-    ?>
-</p>
+
 
 </body>
 </html>
