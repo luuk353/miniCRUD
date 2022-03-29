@@ -8,25 +8,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-    <header>
+<header>
 
-        <a href="index.php">index page</a>
-        <a href="bestel.php">bestellijst</a>
-        <a href="login.php">log in</a> 
-        <div class = "image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
-        </div>
-          
-        <?php
-        // include("connect.php");
+    <a href="index.php">index page</a>
+    <a href="bestel.php">bestellijst</a>
+    <a href="login.php">log in</a>
+    <div class="image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
+    </div>
+
+    <?php
+         include("connect.php");
         ?>
+    
+</header>
+<main>
+    <div class="parent-to-choices">
+        <div class="to-bestellingen">
+            <h1> <a href="bestel.php">naar de bestellijst </a> </h1>
+            <p>als je hierboven klikt ga je naar de bestellijst stylestylestylestylestylestylestyle</p>
+            <a href = "bestel.php">
+                <button> naar de bestellijst</button>
+            </a>
+        </div>
+        <div class="to-login">
+            <h1> <a href = "login.php"> naar de inlog pagina </a> </h1>
+            <p>als je hierboven klikt ga je naar de login pagina stylestylestylestylestylestyle</p>
+            <a href = "login.php">
+                <button> LOGIN</button>
+            </a>
+        </div>
+    </div>
+</main>
+<footer>
 
-    </header>
-    <main>
-   
-    </main>
-    <footer>
-
-    </footer>
+</footer>
 </body>
 
 </html>

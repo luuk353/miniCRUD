@@ -15,19 +15,36 @@
         <a href="index.php">index page</a>
         <a href="bestel.php">bestellijst</a>
         <a href="login.php">log in</a>
-        <div class = "image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
+        <div class="image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
         </div>
         <?php
 // include("connect.php");
 ?>
 
     </header>
-    <main>
-        <div class="winkelmand">
-            <h1>Uw winkelmand</h1>
-            
+    <main id = "winkelmandmain">
+        <div class="papa-winkelmand">
+            <div class="winkelmand">
+                <h1>Uw winkelmand</h1>
+                <p> hier zit u uw winkelmandje</p>
+            </div>
         </div>
-
+        <div class="mandspullen">
+                <h1>Uw winkelmand</h1>
+                <div class="mand1">
+                    <p> pizza man</p>
+                </div>
+                <div class="mand2">
+                    <p> pizza man</p>
+                </div>
+                <div class="mand2">
+                    <p> pizza man</p>
+                </div>
+                <div class="mand3">
+                    <p> pizza man</p>
+                </div>
+        </div>
+        
     </main>
     <footer>
 
