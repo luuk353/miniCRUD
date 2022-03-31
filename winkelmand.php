@@ -25,6 +25,7 @@
     <main>
         <div class="winkelmand">
             <h1>Uw winkelmand</h1>
+            <p> YOOOOOO </p>
             
         </div>
 
