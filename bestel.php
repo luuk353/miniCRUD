@@ -11,25 +11,22 @@
 
 <body>
     <header>
-
         <a href="index.php">index page</a>
         <a href="bestel.php">bestellijst</a>
         <a href="login.php">log in</a>
         <div class = "image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
         </div>
-        <?php
-// include("connect.php");
-?>
-
     </header>
     <main>
-        <div class="winkelmand">
-            <h1>Uw winkelmand</h1>
-            <p> YOOOOOO </p>
-            
-        </div>
+    <div class="bestellingen">
+    <?php
+    for ($i=0; $i <5 ; $i++) { 
+        include("WORKSHOP.php");
+    }
+    ?>
+    </div>
 
-    </main>
+</main>
     <footer>
 
     </footer>
