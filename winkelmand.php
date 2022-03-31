@@ -28,6 +28,7 @@
                 <h1>Uw winkelmand</h1>
                 <p> hier zit u uw winkelmandje</p>
             </div>
+            
         </div>
         <div class="mandspullen">
                 <h1>Uw winkelmand</h1>
