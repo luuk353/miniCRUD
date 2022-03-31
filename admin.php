@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-    <h1> Welkom Admin
+    <h1> Welkom Admin</h1>
     </nav>
 
     
