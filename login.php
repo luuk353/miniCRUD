@@ -10,22 +10,23 @@
 </head>
 
 <body>
-<?php include_once ("includes/header.php");?>
+    <?php include_once ("includes/header.php");?>
     <main>
-            <form id="formulier" action="php/loginvalidate.php" method="post">
-                <P>log hier in: </P><br>
-                <input type="text" name="user" placeholder="username"><br>
-                <p>vul je wachtwoord in:</p><br>
-                <input type="password" name="password" placeholder="password"><br>
-                <input type="submit" name="submit" placeholder="submit"><br>
-
-            </form>
         
+        <form name ="form" id="formulier" action="php/loginvalidate.php" method="post">
+            <P>log hier in: </P><br>
+            <input type="text" name="username" placeholder="username" required><br>
+            <p>vul je wachtwoord in:</p><br>
+            <input type="password" name="password" placeholder="password"required><br>
+            <input type="submit" value="submit" name="submit"><br>
+
+        </form>
+
     </main>
     <footer>
 
     </footer>
-
+<script src="js/main.js"></script>
 </body>
 
 </html>

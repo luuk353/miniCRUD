@@ -1,5 +1,8 @@
 <header>
-    <?php session_start(); ?>
+    <?php 
+    session_start();
+    // var_dump($_SESSION);
+    ?>
     <a href="index.php">index page</a>
     <a href="bestel.php">bestellijst</a>
     <a href="login.php">log in</a>
@@ -10,8 +13,8 @@
     include("includes/connect.php");
         
     if(isset($_SESSION["userinfo"])) {
-        if($_SESSION["userinfo"]["admin"] == 1) { 
-            echo '<a href="../admin.php">admin</a>';
+        if($_SESSION["userinfo"] == "admin") { 
+            echo '<a href="admin.php">admin</a>';
         }
     }
     ?>

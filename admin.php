@@ -13,9 +13,9 @@
 <header>
 <?php
 include_once ("includes/connect.php");
-
-if(!$_SESSION["userinfo"]["admin"] == 1) {
-    header("Location:login.php");
+session_start();
+if(!$_SESSION["userinfo"] == 'admin') {
+    header("Location:admin.php");
 }
 ?>
  <a href="index.php">index page</a>

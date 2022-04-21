@@ -9,12 +9,14 @@ session_start();
         $stmt -> execute();
         $result = $stmt -> fetchAll();
 
-        foreach($result as $res) {
+        foreach($result as $res)  { 
             if($_POST["password"] == $res["password"]) {
-                $_SESSION["userinfo"] = $res;   
+                $_SESSION["userinfo"] = 'admin';
                 break;
             }
         }
     }
+    // var_dump($_SESSION);
+
     header("Location: ../index.php")
     ?>
