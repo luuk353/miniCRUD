@@ -10,24 +10,15 @@
 </head>
 
 <body>
-    <header>
-
-        <a href="index.php">index page</a>
-        <a href="bestel.php">bestellijst</a>
-        <a href="login.php">log in</a>
-        <!-- <img id ="image" src = "img/winkelmand.png"> -->
-
-        <div class = "image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
-        </div>
-
-    </header>
+<?php include_once ("includes/header.php");?>
     <main>
-            <form id="formulier">
+            <form id="formulier" action="php/loginvalidate.php" method="post">
                 <P>log hier in: </P><br>
                 <input type="text" name="user" placeholder="username"><br>
                 <p>vul je wachtwoord in:</p><br>
                 <input type="password" name="password" placeholder="password"><br>
                 <input type="submit" name="submit" placeholder="submit"><br>
+
             </form>
         
     </main>

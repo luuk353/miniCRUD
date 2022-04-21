@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php 
+include_once ("includes/connect.php ");
+/**
+ * @var PDO $connect
+ */
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +15,10 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.php">index page</a>
-        <a href="bestel.php">bestellijst</a>
-        <a href="login.php">log in</a>
-        <div class = "image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
-        </div>
-    </header>
-    <main>
-    <div class="bestellingen">
-    <?php
-    for ($i=0; $i <5 ; $i++) { 
-        include("WORKSHOP.php");
-    }
-    ?>
-    </div>
+<?php include_once ("includes/header.php");?>
+<main>
+    
+    <?php include ("php/readitems.php")?>
 
 </main>
     <footer>

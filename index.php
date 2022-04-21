@@ -8,19 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<header>
-
-    <a href="index.php">index page</a>
-    <a href="bestel.php">bestellijst</a>
-    <a href="login.php">log in</a>
-    <div class="image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
-    </div>
-
-    <?php
-         include("connect.php");
-        ?>
-    
-</header>
+<?php include_once ("includes/header.php");?>
 <main>
     <div class="parent-to-choices">
         <div class="to-bestellingen">

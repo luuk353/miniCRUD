@@ -20,11 +20,11 @@ PDO::ATTR_EMULATE_PREPARES => false,
 try
 {
     $connect = new PDO($dsn, $user, $pass, $opt);
-    echo "verbinding is gemaakt";
+    // echo "Connectie met database Succesvol.";
 }
 catch (PDOExpection $e)
 {
     echo $e->getMessage ();
-    die ("sorry, Database Probleem.");
+    die ("geen connectie met database mogelijk.");
 }
 ?>
