@@ -15,9 +15,9 @@
         
         <form name ="form" id="formulier" action="php/loginvalidate.php" method="post">
             <P>log hier in: </P><br>
-            <input type="text" name="username" placeholder="username" required><br>
+            <input type="text" name="username" placeholder="username" ><br>
             <p>vul je wachtwoord in:</p><br>
-            <input type="password" name="password" placeholder="password"required><br>
+            <input type="password" name="password" placeholder="password"><br>
             <input type="submit" value="submit" name="submit"><br>
 
         </form>

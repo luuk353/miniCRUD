@@ -4,6 +4,7 @@ const loginButton = document.querySelector("input[type=submit]");
 const loginForm = document.querySelector("form")
 
 loginButton.addEventListener("click", (e) => {
+    
     let msg = "";
     if (loginUsername.value.length == 0) {
         msg += "er is geen username ingevuld\n";

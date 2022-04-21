@@ -6,8 +6,8 @@
     <a href="index.php">index page</a>
     <a href="bestel.php">bestellijst</a>
     <a href="login.php">log in</a>
-    <div class="image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
-    </div>
+    <!-- <div class="image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
+    </div> -->
 
     <?php
     include("includes/connect.php");

@@ -6,6 +6,7 @@ include_once ("includes/connect.php ");
  * @var PDO $connect
  */
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +16,37 @@ include_once ("includes/connect.php ");
 </head>
 
 <body>
-<?php include_once ("includes/header.php");?>
-<main>
+    <?php include_once ("includes/header.php");
     
-    <?php include ("php/readitems.php")?>
+    // if(isset($_GET["search"])){
+    //     $search = "%".$_GET['search']."%";
 
-</main>
+    //         $sql = "SELECT * FROM menukaart WHERE titel LIKE :search"; 
+    //         $stmt = $connect -> prepare($sql);
+    //         $stmt -> bindParam(":search", $search);
+    //     }  
+    //     else {
+    //     $sql = "SELECT * FROM menukaart";
+    //     $stmt = $connect -> prepare($sql);
+    // }
+        
+    // $stmt -> execute();
+    // $result = $stmt -> fetchAll();
+    ?>
+    <main id="main-bestel">
+        <form class="search" action="" method="get">
+            <input type="text" name="search" placeholder="Zoek iets?">
+            <button name="zoek" type="submit">Zoeken</button>
+        </form>
+
+        <ul>
+            <?php include ("php/readitems.php")?>
+        </ul>
+    </main>
     <footer>
 
     </footer>
+    <!-- <script src="js/search.js"></script> -->
 </body>
 
 </html>
