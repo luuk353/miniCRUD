@@ -3,9 +3,9 @@
     session_start();
     // var_dump($_SESSION);
     ?>
-    <a href="index.php">index page</a>
-    <a href="bestel.php">bestellijst</a>
-    <a href="login.php">log in</a>
+    <a href="index.php">homepage</a>
+    <a href="bestel.php">menukaart</a>
+    <a href="login.php">loginpage</a>
     <!-- <div class="image" onclick="location.href='winkelmand.php';" style="cursor: pointer;">
     </div> -->
 
